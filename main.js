@@ -8,15 +8,16 @@ for (var i = 0; i < arrow.length; i++) {
 }
 
 
-
-
-
 // active menu item
 let dropdown = document.getElementsByClassName("categories-item");
 for (i = 0; i < dropdown.length; i++) {
 
     dropdown[i].addEventListener("click", function() {
         this.classList.toggle("dropdown-active");
+        for (var i = 0; i < dropdown.length; i++) {
+            dropdown[i].classList.remove('dropdown-active');
+        }
+        this.classList.add('dropdown-active');
     });
     dropdown[i].addEventListener("click", (e) => {
         let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
@@ -26,9 +27,7 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 
-
-
-
+// open menu
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".open-menu");
 
