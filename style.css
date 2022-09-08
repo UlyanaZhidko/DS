@@ -286,6 +286,9 @@
     display: flex;
     align-items: center;
     background: var(--main-color-3);
+    position: sticky;
+    top: 0;
+    z-index: 102;
 }
 
 .close-menu {
@@ -402,4 +405,126 @@
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+
+/*  -----------------------------------------------content----------------------------------------------- */
+
+.content {
+    width: 95%;
+    margin: 70px auto 0;
+    background: var(--main-color-3);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.tab-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content-title {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 43px;
+    color: var(--main-color-2);
+}
+
+.content-date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--main-color-2);
+}
+
+
+/* ----------------------------------------------------- table ----------------------------------------------------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--main-color-5);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--main-color-2);
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+tbody tr:hover {
+    background-color: var(--main-color-7);
+}
+
+
+/* ---------------------------------------------------------- media ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+    .home-section {
+        width: 100%;
+    }
+    .table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    thead,
+    tbody,
+    thead th {
+        display: block;
+    }
+    th:last-child {
+        border-bottom: none;
+    }
+    thead {
+        float: left;
+    }
+    tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    td,
+    th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    tbody tr {
+        display: table-cell;
+    }
+    tbody td {
+        display: block;
+        text-align: center;
+    }
 }
