@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS - dashboards</title>
+    <title>DS - octo</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="img/logo.svg">
 
 
     <link rel="stylesheet" href="style.css">
@@ -110,29 +113,13 @@
             </button>
 
         </div>
-        <style>
-            ss {
-                display: none;
-            }
-            
-            div:target {
-                display: block;
-            }
-            
-            div[id*=t]:target~#one {
-                display: none;
-            }
-            
-            div[id*=tab]:target~#three {
-                display: none;
-            }
-        </style>
+
         <div class="content">
             <div id="Sender" class="tabcontent">
                 <div class="tab-name">
                     <h3 class="content-title">Sender</h3>
                     <div class="sort_tab">
-                        <button class="sort_tablinks sort_defaultOpen" onclick="openSort(event, 'Week')" id="sort_defaultOpen">Week</button>
+                        <button class="sort_tablinks sort_defaultOpen" onclick="openSort(event, 'Week')" id="Sender_defaultOpen">Week</button>
                         <button class="sort_tablinks" onclick="openSort(event, 'Month')">Month</button>
                         <button class="sort_tablinks" onclick="openSort(event, 'From')">
                             <label for="From">
@@ -301,178 +288,9 @@
                 <div class="tab-name">
                     <h3 class="content-title">Reciever</h3>
                     <div class="sort_tab">
-                        <button class="sort_tablinks sort_defaultOpen" onclick="openSort(event, 'Week')" id="sort_defaultOpen">Week</button>
-                        <button class="sort_tablinks" onclick="openSort(event, 'Month')">Month</button>
-                        <button class="sort_tablinks" onclick="openSort(event, 'From')">
-                            <label for="From">
-                                From
-                                <input type="date" name="date_from">
-                            </label>
-                            <label for="To">
-                                To
-                                <input type="date" name="date_to">
-                            </label>
-                        </button>
-                    </div>
-                    <p class="content-date">DATE: Sep 01, 2022</p>
-                </div>
-
-                <div id="Week" class="sort_tabcontent">
-                    <div class="table-wrapper">
-                        <table class="octoSenderWeek">
-                            <thead>
-                                <tr>
-                                    <th>CARD</th>
-                                    <th>COUNT</th>
-                                    <th>AMOUNT</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>111</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>222</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>333</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>444</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>111</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>222</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>333</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>444</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>111</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>222</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>333</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>444</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div id="Month" class="sort_tabcontent">
-                    <div class="table-wrapper">
-                        <table class="octoSenderMonth">
-                            <thead>
-                                <tr>
-                                    <th>CARD</th>
-                                    <th>COUNT</th>
-                                    <th>AMOUNT</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>111</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>222</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>333</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>444</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div id="From" class="sort_tabcontent">
-                    <div class="table-wrapper">
-                        <table class="octoSenderFrom">
-                            <thead>
-                                <tr>
-                                    <th>CARD</th>
-                                    <th>COUNT</th>
-                                    <th>AMOUNT</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>111</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>222</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>333</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                                <tr>
-                                    <td>123456******1234</td>
-                                    <td>444</td>
-                                    <td>123456789.12</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-            <!-- <div id="Reciever" class="tabcontent">
-                <div class="tab-name">
-                    <h3 class="content-title">Reciever</h3>
-                    <div class="sort_tab">
-                        <button class="sort_tablinks" onclick="Reciever_openSort(event, 'Reciever_Week')" id="Reciever_sort_defaultOpen">Week</button>
-                        <button class="sort_tablinks" onclick="Reciever_openSort(event, 'Reciever_Month')">Month</button>
-                        <button class="sort_tablinks" onclick="Reciever_openSort(event, 'Reciever_From')">
+                        <button class="sort_tablinks" onclick="openSort(event, 'Reciever_Week')" id="Reciever_defaultOpen">Week</button>
+                        <button class="sort_tablinks" onclick="openSort(event, 'Reciever_Month')">Month</button>
+                        <button class="sort_tablinks" onclick="openSort(event, 'Reciever_From')">
                             <label for="From">
                                 From
                                 <input type="date" name="date_from">
@@ -593,7 +411,7 @@
                         </table>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 

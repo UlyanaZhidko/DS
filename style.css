@@ -431,6 +431,7 @@
     font-size: 33px;
     line-height: 43px;
     color: var(--main-color-2);
+    width: 156px;
 }
 
 .content-date {
