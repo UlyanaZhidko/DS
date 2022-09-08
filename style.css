@@ -48,7 +48,6 @@
 }
 
 .logo_name {
-    font-family: var(--main-font);
     font-weight: 500;
     font-size: 33px;
     line-height: 43px;
@@ -167,7 +166,6 @@
 }
 
 .link_name {
-    font-family: var(--main-font);
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -200,7 +198,6 @@
 }
 
 .sub-menu a {
-    font-family: var(--main-font);
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -253,7 +250,7 @@
 
 .home-section {
     position: relative;
-    background: var(--main-color-2);
+    background: var(--main-color-1);
     height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
@@ -349,4 +346,44 @@
 .wrap {
     width: 30%;
     transform: translate(100%, 0%);
+}
+
+
+/* --------------------------------------------------------- main --------------------------------------------------------- */
+
+.main {
+    height: 200px;
+    background-size: cover;
+    background: radial-gradient(36.28% 150.93% at 50% 50%, rgba(59, 138, 255, 0.3) 0%, rgba(0, 72, 179, 0.06) 100%), url(img/bg.jpg);
+    border-radius: 0px 0px 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-text {
+    padding: 0 40px 20px;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--main-color-2);
+}
+
+.main-desk {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    color: var(--main-color-2);
+}
+
+.setting {
+    width: 44px;
+    height: 44px;
+    background: #E9671A;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+    border: none;
 }
