@@ -39,8 +39,12 @@
                     <img src="img/Dropdown.svg" class="arrow" alt="Dropdown">
                 </div>
                 <ul class="sub-menu">
-                    <li><a href="#">Month</a></li>
-                    <li><a href="#">Dynamics</a></li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'Month')">Month</button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'Dynamics')">Dynamics</button>
+                    </li>
                 </ul>
             </li>
             <li class="categories-item showMenu">
@@ -52,8 +56,12 @@
                     <img src="img/Dropdown.svg" class="arrow" alt="Dropdown">
                 </div>
                 <ul class="sub-menu">
-                    <li><a href="#">Sender</a></li>
-                    <li><a href="#">Reciever</a></li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'Sender')" id="defaultOpen">Sender</button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'Reciever')">Reciever</button>
+                    </li>
                 </ul>
             </li>
             <li class="categories-item">
@@ -65,16 +73,52 @@
                     <img src="img/Dropdown.svg" class="arrow" alt="Dropdown">
                 </div>
                 <ul class="sub-menu">
-                    <li><a href="#">Country</a></li>
-                    <li><a href="#">Pinfl</a></li>
-                    <li><a href="#">P2P to TT</a></li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'Country')">Country</button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'Pinfl')">Pinfl</button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'P2P to TT')">P2P to TT</button>
+                    </li>
                 </ul>
             </li>
         </ul>
     </aside>
+
     <section class="home-section">
         <div class="home-content">
             <img class="close-menu" src="img/Drag.svg" alt="open menu">
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Search...">
+                    <button type="submit" class="searchButton">
+                        <img src="img/Search.svg" alt="search Button">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-text">
+                <h2 class="main-title">Welcome to DS</h2>
+                <p class="main-desk">We are on a mission to help developers.</p>
+            </div>
+
+            <button class="setting">
+                <img src="img/Setting.svg" alt="Setting">
+            </button>
+
+        </div>
+
+        <div class="content">
+            <div id="Sender" class="tabcontent">
+                <h3>Sender</h3>
+            </div>
+
+            <div id="Reciever" class="tabcontent">
+                <h3>Reciever</h3>
+            </div>
         </div>
     </section>
 
