@@ -96,6 +96,7 @@
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
+    color: var(--main-color-5);
 }
 
 .iocn-link {
@@ -150,7 +151,10 @@
     background: var(--main-color-4);
     box-shadow: 0px 10px 30px rgba(17, 38, 146, 0.05);
     border-radius: 4px;
-    color: var(--main-color-2) !important;
+}
+
+.dropdown-active .link_name {
+    color: var(--main-color-2);
 }
 
 .link_name {
@@ -259,7 +263,7 @@
     align-items: center;
 }
 
-.open-menu {
+.close-menu {
     margin: 0 -20px;
     z-index: 101;
     cursor: pointer;
@@ -270,15 +274,15 @@
     -o-transition: all 0.5s ease;
 }
 
-.close-menu {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+.open-menu {
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
