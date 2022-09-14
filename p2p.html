@@ -119,19 +119,24 @@
                     <h3 class="content-title">Country</h3>
                     <div class="sort_tab">
                         <button class="sort_tablinks sort_defaultOpen" onclick="openSort(event, 'Country_Week')" id="Country_defaultOpen">Week</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Country_Month')">Month</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Country_From')">
                             <label for="From">
                                 From
-                                <input type="date" name="date_from">
+                                <input type="date" id="P2P_Country_From" name="date_from">
                             </label>
                             <label for="To">
                                 To
-                                <input type="date" name="date_to">
+                                <input type="date" id="P2P_Country_To" name="date_to">
                             </label>
+                            <input type="submit" value="" id="P2P_Country_search" onclick=""
+                                class="sort_tablinks_search">
+
                         </button>
                     </div>
-                    <p class="content-date"></p>
+                    <p class="content-date">DATE: Sep 01, 2022</p>
                 </div>
 
                 <div id="Country_Week" class="sort_tabcontent">
@@ -288,16 +293,20 @@
                     <h3 class="content-title">Pinfl</h3>
                     <div class="sort_tab">
                         <button class="sort_tablinks" onclick="openSort(event, 'Pinfl_Week')" id="Pinfl_defaultOpen">Week</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Pinfl_Month')">Month</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Pinfl_From')">
                             <label for="From">
                                 From
-                                <input type="date" name="date_from">
+                                <input type="date" id="P2P_Pinfl_From" name="date_from">
                             </label>
                             <label for="To">
                                 To
-                                <input type="date" name="date_to">
+                                <input type="date" id="P2P_Pinfl_To" name="date_to">
                             </label>
+                            <input type="submit" value="" id="P2P_Pinfl_search" onclick="" class="sort_tablinks_search">
+
                         </button>
                     </div>
                     <p class="content-date">DATE: Sep 01, 2022</p>
@@ -417,16 +426,19 @@
                     <h3 class="content-title">P2P to TT</h3>
                     <div class="sort_tab">
                         <button class="sort_tablinks" onclick="openSort(event, 'P2P_TT_Week')" id="P2P_TT_defaultOpen">Week</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'P2P_TT_Month')">Month</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'P2P_TT_From')">
                             <label for="From">
                                 From
-                                <input type="date" name="date_from">
+                                <input type="date" id="P2P_TT_From" name="date_from">
                             </label>
                             <label for="To">
                                 To
-                                <input type="date" name="date_to">
+                                <input type="date" id="P2P_TT_To" name="date_to">
                             </label>
+                            <input type="submit" value="" id="P2P_TT_search" onclick="" class="sort_tablinks_search">
                         </button>
                     </div>
                     <p class="content-date">DATE: Sep 01, 2022</p>

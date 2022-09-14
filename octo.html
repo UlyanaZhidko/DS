@@ -120,16 +120,19 @@
                     <h3 class="content-title">Sender</h3>
                     <div class="sort_tab">
                         <button class="sort_tablinks sort_defaultOpen" onclick="openSort(event, 'Sender_Week')" id="Sender_defaultOpen">Week</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Sender_Month')">Month</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Sender_From')">
                             <label for="From">
                                 From
-                                <input type="date" name="date_from">
+                                <input type="date" id="sender_From" name="date_from">
                             </label>
                             <label for="To">
                                 To
-                                <input type="date" name="date_to">
+                                <input type="date" id="sender_To" name="date_to">
                             </label>
+                            <input type="submit" value="" id="sender_search" onclick="" class="sort_tablinks_search">
                         </button>
                     </div>
                     <p class="content-date">DATE: Sep 01, 2022</p>
@@ -289,16 +292,19 @@
                     <h3 class="content-title">Reciever</h3>
                     <div class="sort_tab">
                         <button class="sort_tablinks" onclick="openSort(event, 'Reciever_Week')" id="Reciever_defaultOpen">Week</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Reciever_Month')">Month</button>
+                        <div class="sep"></div>
                         <button class="sort_tablinks" onclick="openSort(event, 'Reciever_From')">
                             <label for="From">
                                 From
-                                <input type="date" name="date_from">
+                                <input type="date" id="reciever_From" name="date_from">
                             </label>
                             <label for="To">
                                 To
-                                <input type="date" name="date_to">
+                                <input type="date" id="reciever_To" name="date_to">
                             </label>
+                            <input type="submit" value="" id="reciever_search" onclick="" class="sort_tablinks_search">
                         </button>
                     </div>
                     <p class="content-date">DATE: Sep 01, 2022</p>
