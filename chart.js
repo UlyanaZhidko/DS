@@ -15,6 +15,7 @@ new Chart("chartFirst", {
             borderColor: "#3A57E8",
             fill: false,
             label: "second",
+            color: "#fff",
             backgroundColor: "#3A57E8"
         }, {
             data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
@@ -93,7 +94,7 @@ new Chart("chartThird", {
             data: [{
                 x: 3979083,
                 y: 6.994,
-                r: 15
+                r: 28
             }]
         }, {
             label: ["Japan"],
@@ -102,7 +103,7 @@ new Chart("chartThird", {
             data: [{
                 x: 4931877,
                 y: 5.921,
-                r: 15
+                r: 50
             }]
         }]
     },

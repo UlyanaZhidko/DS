@@ -1,6 +1,8 @@
 // The HTML table.
 var mrotMonth = document.querySelector('.mrotMonth');
-var mrotDynamics = document.querySelector('.mrotDynamics');
+var MrotWeek = document.querySelector('.mrotWeek');
+var MrotDay = document.querySelector('.mrotDay');
+
 
 
 // data.
@@ -9,11 +11,18 @@ var mrotMonthData = [
     { card: 'test', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' }
 ];
 
-var mrotDynamicsData = [
+var mrotWeekData = [
     { card: '1111', count: '01748329', amount: '1234', block: 'N', abs: 'Something' },
     { card: '2222', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' },
     { card: '3333', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' },
     { card: '4444', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' }
+];
+
+var mrotDayData = [
+    { card: '0', count: '01748329', amount: '1234', block: 'N', abs: 'Something' },
+    { card: '1', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' },
+    { card: '2', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' },
+    { card: '3', count: '12345789', amount: '4321', block: 'Y', abs: 'Something Else' }
 ];
 
 // A function to produce a HTML table row as a string.
@@ -47,4 +56,5 @@ function render(mrotMonth) {
 
 // Fire the render function. 
 render(mrotMonth)(mrotMonthData);
-render(mrotDynamics)(mrotDynamicsData);
+render(MrotWeek)(mrotWeekData);
+render(MrotDay)(mrotDayData);
