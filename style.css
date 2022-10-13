@@ -761,6 +761,7 @@ input[type="date"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .login-logo-wrap img {
@@ -864,38 +865,6 @@ input[type="date"] {
 .center {
     min-height: 460px;
     z-index: 9999;
-}
-
-input[type="submit"] {
-    width: 100%;
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--main-color-2);
-    background: var(--main-color-3);
-    border-radius: 20px;
-    border: 2px solid var(--main-color-3);
-    outline: none;
-    text-decoration: none;
-    padding: 12px 93px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-}
-
-input[type="submit"]:hover {
-    background: transparent;
-    color: var(--main-color-3);
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
 }
 
 .tab {
