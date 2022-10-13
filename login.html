@@ -19,32 +19,73 @@
 
 <body>
     <section class="login-form">
+        <div class="login-logo-wrap">
+            <img class="form-img-logo" src="img/logo h.svg" alt="logo humans">
+            <img class="form-img-logo" src="img/infosec.svg" alt="logo infosec">
+        </div>
+
         <div class="login-form_wrap">
             <div class="login-form-info">
                 <h1 class="login-form-title">Get Started.</h1>
-                <form class="login">
-                    <div class="login_field">
-                        <img class="login_icon" src="img/person.svg" alt="person-icon">
-                        <input type="text" class="login_input" placeholder="User name">
-                    </div>
-                    <div class="login_field">
-                        <img class="login_icon" src="img/lock.svg" alt="password-icon">
-                        <input type="password" class="login_input" placeholder="Password">
+
+
+
+
+
+                <div class="wrapper">
+                    <div id="login" class="tabcontent">
+                        <div class="center">
+                            <form class="login">
+                                <div class="login_field">
+                                    <img class="login_icon" src="img/person.svg" alt="person-icon">
+                                    <input type="text" class="login_input" placeholder="User name">
+                                </div>
+                                <div class="login_field">
+                                    <img class="login_icon" src="img/lock.svg" alt="password-icon">
+                                    <input type="password" class="login_input" placeholder="Password">
+                                </div>
+
+                                <a class="btn-login dropdown-active">Login</a>
+                            </form>
+                        </div>
                     </div>
 
-                    <a class="btn-login dropdown-active">Login</a>
-                </form>
+                    <div id="reg" class="tabcontent">
+                        <div class="center">
+                            <form class="login">
+                                <div class="login_field">
+                                    <img class="login_icon" src="img/person.svg" alt="person-icon">
+                                    <input type="text" class="login_input" placeholder="User name">
+                                </div>
+                                <div class="login_field">
+                                    <img class="login_icon" src="img/lock.svg" alt="password-icon">
+                                    <input type="password" class="login_input" placeholder="Password">
+                                </div>
+                                <div class="login_field">
+                                    <img class="login_icon" src="img/lock.svg" alt="person-icon">
+                                    <input type="text" class="login_input" placeholder="Confirm password">
+                                </div>
+
+                                <a class="btn-login dropdown-active">Registration</a>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
             <div class="login-form-img">
-                <div class="form-img-wrap">
-                    <img class="form-img-logo" src="img/logo h.svg" alt="logo humans">
-                    <img class="form-img-logo" src="img/infosec.svg" alt="logo infosec">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'login')" id="defaultOpen">Login</button>
+                    <button class="tablinks" onclick="openTab(event, 'reg')">Registration</button>
                 </div>
             </div>
         </div>
     </section>
 
 
+
+    <script src="login.js"></script>
 </body>
 
 </html>

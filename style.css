@@ -760,6 +760,11 @@ input[type="date"] {
     align-content: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.login-logo-wrap img {
+    margin: 0 20px 50px;
 }
 
 .login-form_wrap {
@@ -778,25 +783,6 @@ input[type="date"] {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-}
-
-.form-img-wrap {
-    background-color: var(--main-color-1);
-    width: 220px;
-    height: 161px;
-    margin: auto;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(21px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .login-form-info {
@@ -870,6 +856,97 @@ input[type="date"] {
 .login_input:hover {
     outline: none;
     border-bottom-color: var(--main-color-4);
+}
+
+
+/* ----LOGIN_tab---- */
+
+.center {
+    min-height: 460px;
+    z-index: 9999;
+}
+
+input[type="submit"] {
+    width: 100%;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--main-color-2);
+    background: var(--main-color-3);
+    border-radius: 20px;
+    border: 2px solid var(--main-color-3);
+    outline: none;
+    text-decoration: none;
+    padding: 12px 93px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+input[type="submit"]:hover {
+    background: transparent;
+    color: var(--main-color-3);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.tab {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablinks {
+    margin: 10px;
+}
+
+.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #020f2e37;
+    color: var(--main-color-1);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.tab button.active {
+    background: var(--main-color-6);
+    z-index: 1;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-color-2);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 
